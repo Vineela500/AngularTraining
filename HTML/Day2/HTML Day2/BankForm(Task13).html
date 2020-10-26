@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; margin-left: 20%;margin-right: 20%;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password],input[type=date],input[type=number],input[type=email], textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.regbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: green;
+  float: right;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 50px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+  <div class="imgcontainer">
+    <img src="login.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label><b>Email</b></label>
+    <input type="email" placeholder="Enter email" name="email" required>
+    <label for="mobile"><b>Mobile Number</b></label>
+    <input type="number" placeholder="Enter mobile number" name="mobile" required>
+    <label for="address"><b>Address</b></label><br/>
+    <textarea rows="4" cols="105" placeholder="Address" required></textarea>
+    <label>   
+        <b>Gender</b> :  
+        </label><br>  
+        <input type="radio" name="male"/> Male <br>  
+        <input type="radio" name="female"/> Female <br>  
+        <input type="radio" name="other"/> Other  
+        <br>  
+        <br>  
+        <label for="birthday"><b>Birthday:</b></label><br>
+  <input type="date" id="birthday" name="birthday">
+
+  <br><br>
+  <label><b>Type of Account</b></label>
+  <select>
+    <option value="Current">Current</option>
+    <option value="savings">Savings</option>
+    <option value="fixed">Fixed Deposit</option>
+    <option value="recurr">Recurring Daposit Account</option>
+  </select><br><br>
+    <button type="submit">Register</button>
+    <label>
+      <input type="checkbox"  name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <a href="LoginForm(Task12).html"><button type="button" class="regbtn">Login</button></a>
+  </div>
+</form>
+
+</body>
+</html>
